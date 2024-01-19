@@ -11,6 +11,7 @@
 		86F36E142B5B323F009A89AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F36E132B5B323F009A89AD /* ContentView.swift */; };
 		86F36E162B5B323F009A89AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F36E152B5B323F009A89AD /* Assets.xcassets */; };
 		86F36E192B5B323F009A89AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F36E182B5B323F009A89AD /* Preview Assets.xcassets */; };
+		86F36E212B5B3258009A89AD /* Wave in Frameworks */ = {isa = PBXBuildFile; productRef = 86F36E202B5B3258009A89AD /* Wave */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F36E212B5B3258009A89AD /* Wave in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = WavePlayground;
+			packageProductDependencies = (
+				86F36E202B5B3258009A89AD /* Wave */,
+			);
 			productName = WavePlayground;
 			productReference = 86F36E0E2B5B323F009A89AD /* WavePlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 86F36E052B5B323F009A89AD;
+			packageReferences = (
+				86F36E1F2B5B3258009A89AD /* XCRemoteSwiftPackageReference "Wave" */,
+			);
 			productRefGroup = 86F36E0F2B5B323F009A89AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86F36E1F2B5B3258009A89AD /* XCRemoteSwiftPackageReference "Wave" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jtrivedi/Wave";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86F36E202B5B3258009A89AD /* Wave */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86F36E1F2B5B3258009A89AD /* XCRemoteSwiftPackageReference "Wave" */;
+			productName = Wave;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 86F36E062B5B323F009A89AD /* Project object */;
 }
